@@ -1,7 +1,8 @@
 use std::fs;
 
 fn part1() {
-    let contents = fs::read_to_string("./input.txt").expect("could not read from file");
+    let contents =
+        fs::read_to_string("../../inputs/1/input.txt").expect("could not read from file");
 
     let mut numbers_left: Vec<i64> = Vec::new();
     let mut numbers_right: Vec<i64> = Vec::new();
@@ -27,7 +28,8 @@ fn part1() {
 }
 
 fn part2() {
-    let contents = fs::read_to_string("./input.txt").expect("could not read from file");
+    let contents =
+        fs::read_to_string("../../inputs/1/input.txt").expect("could not read from file");
 
     let mut numbers_left: Vec<i64> = Vec::new();
     let mut numbers_right: Vec<i64> = Vec::new();
@@ -59,6 +61,5 @@ fn part2() {
 }
 
 fn main() {
-    part1();
     part2();
 }
